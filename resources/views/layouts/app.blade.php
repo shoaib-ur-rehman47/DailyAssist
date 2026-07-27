@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    @include('components.navbar')
+    {{-- @include('components.navbar') --}}
     @yield('content')
-    @include('components.footer')
+    {{-- @include('components.footer') --}}
 </body>
 
 </html>
