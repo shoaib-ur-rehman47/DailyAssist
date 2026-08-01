@@ -47,4 +47,8 @@ class userController extends Controller
             return back()->withErrors(['password' => 'The provided password is incorrect.']);
         }        
     }
+
+    public function logout(Request $request) {
+        
+    }
 } 
