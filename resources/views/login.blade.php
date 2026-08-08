@@ -10,34 +10,131 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
-    <div class="form-container flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        <form action="" method="get" class="bg-white p-8 rounded shadow-md w-full max-w-sm">
+<body class="bg-[#0a0a0f] min-h-screen relative overflow-hidden">
+    <!-- Animated background glow -->
+    <div class="fixed inset-0 pointer-events-none">
+        <div class="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] 
+                    bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.03)_0%,transparent_70%)]
+                    animate-[pulse_8s_ease-in-out_infinite]"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 
+                    bg-[radial-gradient(circle,rgba(59,130,246,0.05)_0%,transparent_70%)]
+                    blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 
+                    bg-[radial-gradient(circle,rgba(139,92,246,0.04)_0%,transparent_70%)]
+                    blur-3xl"></div>
+    </div>
+
+    <div class="form-container relative z-10 flex flex-col items-center justify-center min-h-screen p-6">
+        <!-- Glassmorphism card -->
+        <form action="" method="get" 
+              class="bg-[rgba(20,22,36,0.85)] backdrop-blur-[20px] backdrop-saturate-[1.4]
+                     border border-[rgba(255,255,255,0.06)] 
+                     shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8),inset_0_1px_0_rgba(255,255,255,0.05)]
+                     hover:border-[rgba(59,130,246,0.15)]
+                     hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9),0_0_80px_-20px_rgba(59,130,246,0.05),inset_0_1px_0_rgba(255,255,255,0.08)]
+                     transition-all duration-300
+                     rounded-2xl p-8 w-full max-w-sm">
+            
             @csrf
-            <div class="flex flex-col mb-4">
-                <label class="text-xs mono uppercase tracking-wide text-(--mist) mb-2" for="email">
+
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-2xl font-bold text-white tracking-tight">Welcome Back</h1>
+                <p class="text-[rgba(255,255,255,0.3)] text-sm mt-1">Sign in to continue</p>
+            </div>
+
+            <!-- Email Field -->
+            <div class="input-group relative mb-5">
+                <label class="block text-[0.65rem] font-semibold tracking-widest uppercase 
+                              text-[rgba(255,255,255,0.35)] mb-2 
+                              transition-colors duration-300
+                              peer-focus:text-[rgba(59,130,246,0.7)]" 
+                       for="email">
                     Email
                 </label>
                 <input
-                    class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    type="email" id="email" name="email" value="{{ old('email') }}" required autofocus>
+                    class="w-full bg-[rgba(15,17,31,0.8)] border border-[rgba(255,255,255,0.08)] 
+                           text-[#e8eaf0] rounded-xl py-3 px-4 text-[0.95rem]
+                           transition-all duration-300
+                           focus:outline-none focus:border-[rgba(59,130,246,0.5)] 
+                           focus:bg-[rgba(15,17,31,0.95)]
+                           focus:shadow-[0_0_0_3px_rgba(59,130,246,0.1),inset_0_0_0_1px_rgba(59,130,246,0.2)]
+                           placeholder:text-[rgba(255,255,255,0.2)]"
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    value="{{ old('email') }}" 
+                    placeholder="you@example.com"
+                    required 
+                    autofocus>
             </div>
-            <div class="flex flex-col mb-4">
-                <label class="text-xs mono uppercase tracking-wide text-(--mist) mb-2" for="password">
+
+            <!-- Password Field -->
+            <div class="input-group relative mb-6">
+                <label class="block text-[0.65rem] font-semibold tracking-widest uppercase 
+                              text-[rgba(255,255,255,0.35)] mb-2 
+                              transition-colors duration-300
+                              peer-focus:text-[rgba(59,130,246,0.7)]" 
+                       for="password">
                     Password
                 </label>
                 <input
-                    class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    type="password" id="password" name="password" required>
+                    class="w-full bg-[rgba(15,17,31,0.8)] border border-[rgba(255,255,255,0.08)] 
+                           text-[#e8eaf0] rounded-xl py-3 px-4 text-[0.95rem]
+                           transition-all duration-300
+                           focus:outline-none focus:border-[rgba(59,130,246,0.5)] 
+                           focus:bg-[rgba(15,17,31,0.95)]
+                           focus:shadow-[0_0_0_3px_rgba(59,130,246,0.1),inset_0_0_0_1px_rgba(59,130,246,0.2)]
+                           placeholder:text-[rgba(255,255,255,0.2)]"
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="••••••••"
+                    required>
             </div>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                type="submit">Login</button>
-            <p class="mt-4 text-sm text-gray-600">
-                Don't have an account? <a href="{{ url('/register') }}"
-                    class="text-blue-600 hover:underline">Register</a>
+
+            <!-- Login Button -->
+            <button
+                class="w-full bg-linear-to-br from-[#2563eb] to-[#1d4ed8] 
+                       text-white font-semibold py-3 px-6 rounded-xl text-[0.95rem] 
+                       tracking-[0.02em] cursor-pointer
+                       transition-all duration-300 relative overflow-hidden
+                       hover:-translate-y-0.5
+                       hover:shadow-[0_8px_25px_-5px_rgba(37,99,235,0.4),0_0_40px_-10px_rgba(37,99,235,0.2)]
+                       active:scale-[0.98]
+                       group"
+                type="submit">
+                <span class="relative z-10">Sign In</span>
+                <span class="absolute inset-0 -translate-x-full group-hover:translate-x-full 
+                             bg-linear-to-r from-transparent via-[rgba(255,255,255,0.1)] to-transparent
+                             transition-transform duration-500"></span>
+            </button>
+
+            <!-- Register Link -->
+            <p class="mt-6 text-center text-sm text-[rgba(255,255,255,0.4)]">
+                Don't have an account? 
+                <a href="{{ url('/register') }}" 
+                   class="text-[#60a5fa] hover:text-[#93bbfc] 
+                          transition-colors duration-200
+                          hover:underline font-medium">
+                    Register
+                </a>
             </p>
         </form>
+
+        <!-- Footer note -->
+        <p class="mt-6 text-[0.7rem] text-[rgba(255,255,255,0.15)] tracking-wider">
+            SECURE • ENCRYPTED
+        </p>
     </div>
+
+    <!-- Custom animation -->
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.1); }
+        }
+    </style>
 </body>
 
 </html>
