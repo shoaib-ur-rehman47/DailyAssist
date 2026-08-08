@@ -18,16 +18,24 @@
                 <label class="text-xs mono uppercase tracking-wide text-(--mist) mb-2" for="email">
                     Email
                 </label>
-                <input class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" type="email" id="email" name="email" value="{{ old('email') }}" required autofocus>
+                <input
+                    class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="email" id="email" name="email" value="{{ old('email') }}" required autofocus>
             </div>
             <div class="flex flex-col mb-4">
                 <label class="text-xs mono uppercase tracking-wide text-(--mist) mb-2" for="password">
                     Password
                 </label>
-                <input class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" type="password" id="password" name="password" required>
+                <input
+                    class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="password" id="password" name="password" required>
             </div>
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                 type="submit">Login</button>
+            <p class="mt-4 text-sm text-gray-600">
+                Don't have an account? <a href="{{ url('/register') }}"
+                    class="text-blue-600 hover:underline">Register</a>
+            </p>
         </form>
     </div>
 </body>
