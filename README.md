@@ -1,58 +1,134 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📅 DailyAssist
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**DailyAssist** is a versatile task and schedule management application designed to help you keep track of the work you've completed and plan the work you're about to do. Built to act as your personal assistant, it remembers your pending tasks and helps you organize your busy days into a clear, manageable schedule.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Task Tracking** — Log the work you've done, so nothing gets forgotten or duplicated.
+- **Smart Scheduling** — Plan upcoming tasks and organize them into a structured daily/weekly schedule.
+- **Task Reminders** — Stay on top of pending work with a built-in reminder system.
+- **Progress Overview** — Get a quick snapshot of completed vs. pending tasks at a glance.
+- **Simple & Intuitive UI** — Focused on usability so you spend less time managing the app and more time being productive.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🛠️ Tech Stack
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+| Component     | Technology       |
+|----------------|------------------|
+| Framework      | Laravel 13       |
+| Language       | PHP              |
+| Database       | MySQL            |
+| Frontend       | Blade / Tailwind CSS |
+| Package Manager| Composer, npm    |
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## 🚀 Getting Started
 
-## Agentic Development
+### Prerequisites
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Make sure you have the following installed on your system:
 
-```bash
-composer require laravel/boost --dev
+- PHP >= 8.3
+- Composer
+- MySQL
+- Node.js & npm
 
-php artisan boost:install
-```
+### Installation
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/dailyassist.git
+   cd dailyassist
+   ```
 
-## Contributing
+2. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. **Install frontend dependencies**
+   ```bash
+   npm install
+   npm run build
+   ```
 
-## Code of Conduct
+4. **Set up environment file**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5. **Configure your database**
 
-## Security Vulnerabilities
+   Update the `.env` file with your database credentials:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=dailyassist
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6. **Run migrations**
+   ```bash
+   php artisan migrate
+   ```
 
-## License
+7. **Serve the application**
+   ```bash
+   php artisan serve
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+   Visit `http://127.0.0.1:8000` in your browser to see DailyAssist in action.
+
+---
+
+## 📖 Usage
+
+Once the application is running:
+
+1. **Log In / Register** to create your personal workspace.
+2. **Add a Task** — describe the work you need to do, along with a due date.
+3. **Mark Tasks as Done** — keep a record of completed work for future reference.
+4. **View Your Schedule** — see your upcoming tasks organized by day, so you always know what's next.
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Calendar view for visual scheduling
+- [ ] Email/notification reminders
+- [ ] Task categories and priority tags
+- [ ] Analytics dashboard for productivity insights
+- [ ] Mobile-responsive design improvements
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to improve DailyAssist:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature-name`)
+3. Commit your changes (`git commit -m "Add your feature"`)
+4. Push to the branch (`git push origin feature/your-feature-name`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is open-sourced software licensed under the [MIT license](LICENSE).
+
+---
+
+## 👤 Author
+
+Developed as part of a personal/academic project by **shoaib-ur-rehman47 (Guru)**.
+
+> *DailyAssist — because a well-organized day starts with a well-organized mind.*
