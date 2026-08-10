@@ -16,9 +16,9 @@
 
 ## 🛠️ Tech Stack
 
-| Component     | Technology       |
+| Component      | Technology       |
 |----------------|------------------|
-| Framework      | Laravel 13       |
+| Framework      | Laravel ^13.8    |
 | Language       | PHP              |
 | Database       | MySQL            |
 | Frontend       | Blade / Tailwind CSS |
@@ -41,7 +41,7 @@ Make sure you have the following installed on your system:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/dailyassist.git
+   git clone https://github.com/shoaib-ur-rehman47/dailyassist.git
    cd dailyassist
    ```
 
