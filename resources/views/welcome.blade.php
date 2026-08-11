@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h1 class="text-4xl font-bold">Welcome {{ $name }}</h1>
+    <h1 class="text-4xl font-bold">Welcome User</h1>
     <h2>nothing</h2>
 </body>
 

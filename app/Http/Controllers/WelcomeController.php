@@ -6,14 +6,10 @@ use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
 {
-    public function index($name)
+    public function addUser()
     {
-        // return view('welcome', compact('name'));
-        return "this is welcome controller with name: " . $name;
+        return "<h1 class='text-4xl font-bold'>Welcome User</h1>";
+        
     }
 
-    public function addtask()
-    {
-        return "this is add task";
-    }
 }
