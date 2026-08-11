@@ -11,4 +11,9 @@ class WelcomeController extends Controller
         // return view('welcome', compact('name'));
         return "this is welcome controller with name: " . $name;
     }
+
+    public function addtask()
+    {
+        return "this is add task";
+    }
 }
