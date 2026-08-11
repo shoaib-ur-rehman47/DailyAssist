@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
 
-Route::get('/{name}', function ($name) {
-    return view('welcome', compact('name'));
-});
-
+Route::get('/index/{name}', [WelcomeController::class, 'index']);
+Route::view('/welcome/{name}', 'welcome');
