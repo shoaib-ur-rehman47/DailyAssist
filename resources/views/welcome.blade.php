@@ -11,11 +11,9 @@
 </head>
 
 <body>
-    <ul class="flex flex-row gap-4">
-        @foreach ($data as $key => $value)
-            <li><strong>{{ ucfirst($key) }}:</strong> {{ $value }}</li>
-        @endforeach
-    </ul>
+    @foreach ($students as $student)
+        <p>{{ $student['name'] }} - {{ $student['grade'] }}</p>
+    @endforeach
 </body>
 
 </html>
