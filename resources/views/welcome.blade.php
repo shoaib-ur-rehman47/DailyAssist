@@ -33,9 +33,9 @@
                     </th>
                 </tr>
             </thead>
-            <tbody class="bg-white divide-y divide-gray-100">
+            <tbody class="bg-blue-50 divide-y divide-blue-100">
                 @forelse ($students as $student)
-                    <tr class="hover:bg-gray-50 transition-colors">
+                    <tr class="hover:bg-blue-100 transition-colors">
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                             {{ $student['id'] }}
                         </td>
