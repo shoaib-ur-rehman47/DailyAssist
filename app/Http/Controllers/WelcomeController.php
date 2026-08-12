@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
 {
-    public function addUser()
+    public function addUser($name)
     {
-        return "<h1 class='text-4xl font-bold'>Welcome User</h1>";
+        return "<h1 class='text-4xl font-bold'>Welcome $name</h1>";
         
     }
 
