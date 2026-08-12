@@ -12,4 +12,13 @@ class WelcomeController extends Controller
         
     }
 
+    public function showdata(){
+        $data = [
+            'name' => 'shoaib',
+            'age' => 23,
+            'email' => 'shoaib@example.com'
+        ];
+        return view('welcome', compact('data'));
+    }
+
 }

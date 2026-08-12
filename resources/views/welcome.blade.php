@@ -11,8 +11,11 @@
 </head>
 
 <body>
-    <h1 class="text-4xl font-bold">Welcome User</h1>
-    <h2>nothing</h2>
+    <ul class="flex flex-row gap-4">
+        @foreach ($data as $key => $value)
+            <li><strong>{{ ucfirst($key) }}:</strong> {{ $value }}</li>
+        @endforeach
+    </ul>
 </body>
 
 </html>
