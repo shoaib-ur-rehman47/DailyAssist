@@ -11,7 +11,9 @@
 
 <body>
     <x-navbar />
+    <x-aside></x-aside>
     <h1>welcome to dashboard</h1>
+    <x-footer></x-footer>
 </body>
 
 </html>
