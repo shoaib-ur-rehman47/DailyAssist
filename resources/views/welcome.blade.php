@@ -10,8 +10,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
-    <x-navbar />
+<body class="bg-gray-800">
+    <h1 class="text-4xl text-gray-100">Welcome to Daily Assist</h1>
 </body>
 
 </html>

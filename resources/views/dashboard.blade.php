@@ -9,11 +9,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
-    <x-navbar />
-    <x-aside></x-aside>
-    <h1>welcome to dashboard</h1>
-    <x-footer></x-footer>
+<body class="bg-gray-100">
+    <h1 class="text-4xl text-green-400">Dashboard</h1>
 </body>
 
 </html>
