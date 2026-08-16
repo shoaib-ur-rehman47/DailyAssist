@@ -8,3 +8,5 @@ Route::view('/', 'welcome')->name('welcome');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::view('/features', 'generals.features')->name('features');

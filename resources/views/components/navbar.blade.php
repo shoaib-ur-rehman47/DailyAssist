@@ -1,4 +1,4 @@
-<nav class=" px-16 py-4 flex justify-between items-center border-b-gray-200 border-b-2">
+<nav class=" font-serif px-16 py-4 flex justify-between items-center border-b-gray-200 border-b-2">
     <div class="text-blue-800 logo hover:scale-95 flex items-center justify-center font-bold gap-0.5">
         <a href="#" class="flex items-center gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -10,7 +10,7 @@
         </a>
     </div>
     <ul class="flex ">
-        <li><a href="#"
+        <li><a href="{{ route('features') }}"
                 class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">Features</a></li>
         <li><a href="#" class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">How It
                 Works</a></li>
