@@ -1,4 +1,4 @@
-<nav class=" px-16 py-4 flex justify-between items-center">
+<nav class=" px-16 py-4 flex justify-between items-center border-b-gray-200 border-b-2">
     <div class="text-blue-800 logo hover:scale-95 flex items-center justify-center font-bold gap-0.5">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6">
@@ -7,15 +7,15 @@
         </svg>
         <div class="font-bold text-2xl">DailyAssist</div>
     </div>
-    <ul class="flex">
-        <li><a href="#" class="hover:text-gray-700 px-4 py-2 text-sm">Features</a></li>
-        <li><a href="#" class="hover:text-gray-700 px-4 py-2 text-sm">How It Works</a></li>
-        <li><a href="#" class="hover:text-gray-700 px-4 py-2 text-sm">Pricing</a></li>
-        <li><a href="#" class="hover:text-gray-700 px-4 py-2 text-sm">FAQs</a></li>
+    <ul class="flex ">
+        <li><a href="#" class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">Features</a></li>
+        <li><a href="#" class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">How It Works</a></li>
+        <li><a href="#" class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">Pricing</a></li>
+        <li><a href="#" class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">FAQ</a></li>
     </ul>
     <div>
-        <button class="py-2 px-4 hover:bg-gray-200">Log In</button>
-        <button class="py-2 px-4 bg-blue-800 hover:bg-blue-700 hover:scale-95 text-white font-bold rounded">Get
+        <button class="py-1.5  px-4 hover:bg-gray-200 rounded-full">Login</button>
+        <button class="py-1.5  px-4 bg-blue-800 hover:bg-blue-700 hover:scale-95 text-white rounded-full">Get
             Started</button>
     </div>
 </nav>
