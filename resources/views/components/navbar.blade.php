@@ -15,7 +15,7 @@
         <li><a href="{{ route('how-it-works') }}"
                 class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">How It
                 Works</a></li>
-        <li><a href="#"
+        <li><a href="{{ route('pricing') }}"
                 class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">Pricing</a></li>
         <li><a href="#" class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">FAQ</a>
         </li>
