@@ -12,3 +12,4 @@ Route::get('/dashboard', function () {
 Route::view('/features', 'generals.features')->name('features');
 Route::view('/how-it-works', 'generals.howItWorks')->name('how-it-works');
 Route::view('/pricing', 'generals.pricing')->name('pricing');
+Route::view('/faq', 'generals.faq')->name('faq');

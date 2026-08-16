@@ -17,7 +17,8 @@
                 Works</a></li>
         <li><a href="{{ route('pricing') }}"
                 class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">Pricing</a></li>
-        <li><a href="#" class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">FAQ</a>
+        <li><a href="{{ route('faq') }}"
+                class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">FAQ</a>
         </li>
     </ul>
     <div>
