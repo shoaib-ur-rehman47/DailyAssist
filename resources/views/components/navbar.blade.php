@@ -12,7 +12,8 @@
     <ul class="flex ">
         <li><a href="{{ route('features') }}"
                 class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">Features</a></li>
-        <li><a href="#" class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">How It
+        <li><a href="{{ route('how-it-works') }}"
+                class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">How It
                 Works</a></li>
         <li><a href="#"
                 class="hover:text-blue-900 hover:border-b-blue-800 hover:border-b-2 px-4 py-2 ">Pricing</a></li>

@@ -10,3 +10,4 @@ Route::get('/dashboard', function () {
 })->name('dashboard');
 
 Route::view('/features', 'generals.features')->name('features');
+Route::view('/how-it-works', 'generals.howItWorks')->name('how-it-works');
