@@ -16,6 +16,8 @@
     </div>
     @php
         $featureCard = [
+            "Task Management" => "Easily create, edit, and organize your tasks. Set priorities and deadlines to stay on top of your work.",
+            "Calendar Integration" => "Sync your tasks with your favorite calendar apps to keep track of your schedule and deadlines.",
             "How It Works" => "DailyAssist helps you organize your tasks, set reminders, and collaborate with your team. Simply create an account, add your tasks, and let DailyAssist keep you on track.",
             "Pricing" => "DailyAssist offers a free plan with basic features. For advanced features and team collaboration, check out our premium plans.",
             "FAQ" => "Have questions? Check out our FAQ section for answers to common questions about DailyAssist.",
