@@ -68,7 +68,7 @@
         </div>
     </div>
 
-    <!-- Mobile Menu (Hidden by default) -->
+    <!-- Mobile Menu -->
     <div class="md:hidden hidden mt-4 pt-4 border-t border-gray-200/80 dark:border-gray-700/80" id="mobileMenu">
         <ul class="flex flex-col space-y-1">
             @foreach ($path as $key => $value)
@@ -84,11 +84,7 @@
                     Login
                 </button>
             </li>
-            <li>
-                <button class="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white text-sm font-medium rounded-lg shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-300">
-                    Get Started
-                </button>
-            </li>
+            <!-- Removed duplicate Get Started button from mobile menu -->
         </ul>
     </div>
 </nav>
