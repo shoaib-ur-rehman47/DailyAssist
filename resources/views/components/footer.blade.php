@@ -127,9 +127,11 @@
                 <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
                     Subscribe to our newsletter for updates and tips.
                 </p>
-                <form class="mt-4">
+
+                <form method="POST" action="/showdata" class="mt-4">
+                    @csrf
                     <div class="flex flex-col sm:flex-row gap-2">
-                        <input type="email" placeholder="Enter your email"
+                        <input type="email" name="mail" id="mail"
                             class="flex-1 px-4 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-800 dark:text-white transition-colors"
                             required>
                         <button type="submit"
