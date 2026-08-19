@@ -20,7 +20,7 @@
                             d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                 </div>
-                <span class="font-bold text-2xl bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent tracking-tight">
+                <span class="font-bold text-2xl bg-linear-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent tracking-tight">
                     DailyAssist
                 </span>
             </a>
@@ -52,14 +52,14 @@
             </button>
             
             <!-- Get Started Button - Hidden on mobile, visible on tablet/desktop -->
-            <button class="hidden sm:inline-flex relative overflow-hidden group px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white text-sm font-medium rounded-full shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 hover:scale-105 active:scale-95 transition-all duration-300">
+            <button class="hidden sm:inline-flex relative overflow-hidden group px-6 py-2.5 bg-linear-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white text-sm font-medium rounded-full shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 hover:scale-105 active:scale-95 transition-all duration-300">
                 <span class="relative z-10 flex items-center gap-2">
                     Get Started
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                 </span>
-                <span class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+                <span class="absolute inset-0 bg-linear-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
             </button>
             
             <!-- Mobile Menu Button -->
@@ -89,14 +89,14 @@
             </li>
             <!-- Get Started Button in Mobile Menu -->
             <li>
-                <button class="relative overflow-hidden group w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white text-sm font-medium rounded-lg shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-300">
+                <button class="relative overflow-hidden group w-full px-4 py-3 bg-linear-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white text-sm font-medium rounded-lg shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-300">
                     <span class="relative z-10 flex items-center justify-center gap-2">
                         Get Started
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </span>
-                    <span class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+                    <span class="absolute inset-0 bg-linear-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
                 </button>
             </li>
         </ul>
