@@ -1,7 +1,7 @@
 @extends("layouts.app")
 @section("title", "Pricing")
 @section("content")
-    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section class="relative overflow-hidden bg-linear-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div class="absolute inset-0 opacity-10">
             <div class="absolute top-0 -left-4 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
             <div class="absolute top-0 -right-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
@@ -19,7 +19,7 @@
                 
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
                     Simple, Free &amp;
-                    <span class="bg-gradient-to-r from-green-500 to-emerald-500 dark:from-green-400 dark:to-emerald-400 bg-clip-text text-transparent">Always Accessible</span>
+                    <span class="bg-linear-to-r from-green-500 to-emerald-500 dark:from-green-400 dark:to-emerald-400 bg-clip-text text-transparent">Always Accessible</span>
                 </h1>
                 
                 <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -33,8 +33,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
             <!-- Free Plan Highlight -->
             <div class="relative max-w-4xl mx-auto">
-                <div class="absolute -inset-1 bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-600 rounded-3xl blur-xl opacity-20"></div>
-                <div class="relative bg-gradient-to-br from-green-50 to-emerald-50 dark:from-gray-800 dark:to-gray-800 rounded-3xl p-8 sm:p-12 border-2 border-green-200 dark:border-green-700">
+                <div class="absolute -inset-1 bg-linear-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-600 rounded-3xl blur-xl opacity-20"></div>
+                <div class="relative bg-linear-to-br from-green-50 to-emerald-50 dark:from-gray-800 dark:to-gray-800 rounded-3xl p-8 sm:p-12 border-2 border-green-200 dark:border-green-700">
                     <div class="absolute -top-4 right-8">
                         <span class="inline-flex items-center px-4 py-1 bg-green-500 text-white text-sm font-semibold rounded-full shadow-lg shadow-green-500/30">
                             <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
@@ -63,37 +63,37 @@
 
                     <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-700/50 rounded-xl">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
                             <span class="text-sm text-gray-700 dark:text-gray-300">Unlimited Tasks</span>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-700/50 rounded-xl">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
                             <span class="text-sm text-gray-700 dark:text-gray-300">Calendar Sync</span>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-700/50 rounded-xl">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
                             <span class="text-sm text-gray-700 dark:text-gray-300">Team Collaboration</span>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-700/50 rounded-xl">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
                             <span class="text-sm text-gray-700 dark:text-gray-300">Smart Reminders</span>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-700/50 rounded-xl">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
                             <span class="text-sm text-gray-700 dark:text-gray-300">Mobile Access</span>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-700/50 rounded-xl">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
                             <span class="text-sm text-gray-700 dark:text-gray-300">Analytics &amp; Reports</span>
@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="mt-8 text-center">
-                        <a href="#" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-medium rounded-full shadow-lg shadow-green-500/30 hover:shadow-green-500/40 hover:scale-105 transition-all duration-300">
+                        <a href="#" class="inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-medium rounded-full shadow-lg shadow-green-500/30 hover:shadow-green-500/40 hover:scale-105 transition-all duration-300">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
