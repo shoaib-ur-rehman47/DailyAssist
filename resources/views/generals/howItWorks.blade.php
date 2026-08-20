@@ -124,9 +124,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Connector lines -->
-                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 dark:from-blue-700 dark:via-indigo-700 dark:to-purple-700 -translate-y-1/2" style="width: 66%; left: 17%;"></div>
             </div>
 
             <!-- Additional Steps -->
