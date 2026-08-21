@@ -59,7 +59,7 @@
                 </div>
 
                 <!-- Sign Up Form -->
-                <form class="space-y-4" method="POST" action="{{ route('register') }}">
+                <form class="space-y-4" method="POST" action="{{ route('getstarted') }}">
                     @csrf
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -136,7 +136,7 @@
                 <!-- Sign In Link -->
                 <p class="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
                     Already have an account?
-                    <a href="{{ route('login') }}" class="font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline transition-colors">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline transition-colors">
                         Sign in
                     </a>
                 </p>
