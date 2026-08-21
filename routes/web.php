@@ -16,5 +16,6 @@ Route::view('/pricing', 'generals.pricing')->name('pricing');
 Route::view('/faq', 'generals.faq')->name('faq');
 
 Route::view('/getstarted', 'users.getstarted')->name('getstarted');
+Route::view('/login', 'users.login')->name('login');
 
 Route::post('/showdata', [ShowdataController::class, "showdata"]);
