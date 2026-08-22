@@ -52,7 +52,7 @@
         <!-- Actions -->
         <div class="flex items-center gap-3">
             <!-- Login Button - Hidden on mobile, visible on tablet/desktop -->
-            <button
+            <button onclick="window.location.href='{{ route('login') }}'"
                 class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-4 h-4">
@@ -101,7 +101,7 @@
                 </li>
             @endforeach
             <li class="pt-2">
-                <button
+                <button onclick="window.location.href='{{ route('login') }}'"
                     class="w-full px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-300">
                     Login
                 </button>
