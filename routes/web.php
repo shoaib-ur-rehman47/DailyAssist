@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\ShowdataController;
+use App\Http\Controllers\getstartedController;
 
 Route::view('/', 'welcome')->name('welcome');
 
@@ -16,6 +17,7 @@ Route::view('/pricing', 'generals.pricing')->name('pricing');
 Route::view('/faq', 'generals.faq')->name('faq');
 
 Route::view('/getstarted', 'users.getstarted')->name('getstarted');
+Route::post('/getstarted', [getstartedController::class, "showsignup"]);
 Route::view('/login', 'users.login')->name('login');
 
 Route::post('/showdata', [ShowdataController::class, "showdata"]);
