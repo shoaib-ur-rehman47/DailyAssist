@@ -14,6 +14,6 @@ class getstartedController extends Controller
             'password_confirmation' => 'required|same:password',
             'terms' => 'accepted',
         ]);
-        return "test";
+        return view('temps.userdata', ['name' => $request->name, 'email' => $request->email, 'password' => $request->password]);
     }
 } 
