@@ -172,7 +172,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                     </svg>
                 </a>
-                <a href="#" class="inline-flex items-center justify-center px-8 py-4 bg-blue-500/20 text-white font-medium rounded-full border border-blue-400/30 hover:bg-blue-500/30 transition-all duration-300">
+                <a href="{{ route('pricing') }}" class="inline-flex items-center justify-center px-8 py-4 bg-blue-500/20 text-white font-medium rounded-full border border-blue-400/30 hover:bg-blue-500/30 transition-all duration-300">
                     View Pricing
                 </a>
             </div>
