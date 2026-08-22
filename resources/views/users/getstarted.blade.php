@@ -102,7 +102,7 @@
                     </div>
 
                     <div class="flex items-start">
-                        <input type="checkbox" id="terms" name="terms"
+                        <input type="checkbox" id="terms" name="terms" required
                             class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-0.5">
                         <label for="terms" class="ml-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                             I agree to the
