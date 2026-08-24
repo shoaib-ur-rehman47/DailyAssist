@@ -226,13 +226,13 @@
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="#" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 font-medium rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                            Start Free Trial
+                            Start Free
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                             </svg>
                         </a>
                         <a href="#" class="inline-flex items-center gap-2 px-8 py-3 bg-blue-500/20 text-white font-medium rounded-full border border-blue-400/30 hover:bg-blue-500/30 transition-all duration-300">
-                            Contact Sales
+                            Contact Us
                         </a>
                     </div>
                 </div>
