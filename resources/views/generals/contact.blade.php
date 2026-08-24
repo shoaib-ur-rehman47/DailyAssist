@@ -77,7 +77,7 @@
                     <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-200 dark:border-gray-700">
                         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Us a Message</h2>
                         
-                        <form method="POST" action="{{ route('contact.send') }}" class="space-y-4">
+                        <form method="POST" action="" class="space-y-4">
                             @csrf
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
