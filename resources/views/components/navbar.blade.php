@@ -4,6 +4,7 @@
         'how-it-works' => 'How It Works',
         'pricing' => 'Pricing',
         'faq' => 'FAQ',
+        'contact' => 'Contact Us',
     ];
 @endphp
 
