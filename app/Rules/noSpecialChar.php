@@ -15,7 +15,7 @@ class noSpecialChar implements ValidationRule
      */
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        $pattern = '/[a-zA-Z0-9 .]/';
+        $pattern = '/[a-zA-Z ]/';
         if (!preg_match($pattern, $value)) {
             $fail('The :attribute must not contain special characters.');
         }
