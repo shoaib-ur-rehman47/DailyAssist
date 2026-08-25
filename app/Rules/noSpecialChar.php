@@ -15,9 +15,17 @@ class noSpecialChar implements ValidationRule
      */
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        $pattern = '/[a-zA-Z ]/';
-        if (!preg_match($pattern, $value)) {
+        if(preg_match('/[0-9]/', $value)) {
+            $fail('The :attribute must not contain numbers.');
+        }
+
+        if(preg_match('/[^a-zA-Z\s]/', $value)) {
             $fail('The :attribute must not contain special characters.');
+        }
+
+        $pattern = '/^[A-Z][a-z]*( [A-Z][a-z]*)*$/';
+        if (!preg_match($pattern, $value)) {
+            $fail('The first letter of each word in the :attribute must be capitalized.');
         }
     }
 }
