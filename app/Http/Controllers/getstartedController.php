@@ -15,9 +15,9 @@ class getstartedController extends Controller
             'password_confirmation' => 'required|same:password',
             'terms' => 'accepted',
         ],[
-            'password_confirmation.same' => 'The password confirmation should match the password.',
+            'password_confirmation.same' => 'The confirm password should match the password.',
         ]);
-        // return view('temps.userwelcome', ['name' => $request->name, 'email' => $request->email, 'password' => $request->password]);
-        return $request->all();
+        return view('temps.userwelcome', ['name' => $request->name]);
+        // return $request->all();
     }
 } 
