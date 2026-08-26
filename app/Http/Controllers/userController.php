@@ -24,6 +24,8 @@ class getstartedController extends Controller
             'email' => $validatedData['email'],
             'password' => bcrypt($validatedData['password']),
         ]);
+        User::where('email', $validatedData['email'])->update(['is_verified' => 1]);
+        
         // return view('temps.userwelcome', ['name' => $request->name]);
         // return $request->all();
     }
