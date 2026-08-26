@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Rules\noSpecialChar;
+use Illuminate\Http\Request;
 
 class getstartedController extends Controller
 {
     function showsignup(Request $request){
-        $request->validate([
+            $request->validate([
             'name' => ['required', 'string', 'max:255', new noSpecialChar],
             'email' => 'required|email',
             'password' => 'required|min:6',
@@ -17,7 +17,8 @@ class getstartedController extends Controller
         ],[
             'password_confirmation.same' => 'The confirm password should match the password.',
         ]);
-        return view('temps.userwelcome', ['name' => $request->name]);
+        
+        // return view('temps.userwelcome', ['name' => $request->name]);
         // return $request->all();
     }
 } 
