@@ -18,7 +18,7 @@ Route::view('/faq', 'generals.faq')->name('faq');
 Route::view('/contact-us', 'generals.contact')->name('contact');
 
 Route::view('/getstarted', 'users.getstarted')->name('getstarted');
-Route::post('/getstarted', [userController::class, "showsignup"]);
+Route::post('/getstarted', [userController::class, "userRegister"]);
 Route::view('/login', 'users.login')->name('login');
 
-Route::post('/showdata', [ShowdataController::class, "showdata"]);
+// Route::post('/showdata', [ShowdataController::class, "showdata"]);

@@ -6,9 +6,9 @@ use App\Models\User;
 use App\Rules\noSpecialChar;
 use Illuminate\Http\Request;
 
-class getstartedController extends Controller
+class userController extends Controller
 {
-    function showsignup(Request $request){
+    function userRegister(Request $request){
             $validatedData = $request->validate([
             'name' => ['required', 'string', 'max:255', new noSpecialChar],
             'email' => 'required|email',
@@ -26,6 +26,9 @@ class getstartedController extends Controller
         ]);
         User::where('email', $validatedData['email'])->update(['is_verified' => 1]);
         return view('temps.userwelcome', ['name' => $validatedData['name']]);
-        // return $request->all();
+    }
+
+    public function userLogin(){
+
     }
 } 
