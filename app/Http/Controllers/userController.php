@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Rules\noSpecialChar;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class userController extends Controller
 {
@@ -28,7 +29,21 @@ class userController extends Controller
         return view('temps.userwelcome', ['name' => $validatedData['name']]);
     }
 
-    public function userLogin(){
+    public function userLogin(Request $request){
+        $validatedData = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
 
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials)) {
+            return view('temps.userwelcome', ['name' => Auth::user()->name]);
+        } 
+        else if (!User::where('email', $validatedData['email'])->exists()) {
+            return back()->withErrors(['email' => 'The provided email does not exist.']);
+        }
+        else {
+            return back()->withErrors(['password' => 'The provided password is incorrect.']);
+        }        
     }
 } 
