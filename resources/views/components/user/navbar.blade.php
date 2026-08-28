@@ -154,7 +154,7 @@
                             <!-- Sample notification items -->
                             <a href="#" class="dropdown-item hover:bg-blue-50 dark:hover:bg-blue-900/20">
                                 <div class="flex items-start">
-                                    <div class="w-2 h-2 mt-2 mr-3 bg-blue-500 rounded-full flex-shrink-0"></div>
+                                    <div class="w-2 h-2 mt-2 mr-3 bg-blue-500 rounded-full shrink-0"></div>
                                     <div>
                                         <p class="text-sm text-gray-700 dark:text-gray-300">Task "Q4 Report" is due tomorrow</p>
                                         <p class="text-xs text-gray-500 dark:text-gray-400">5 min ago</p>
@@ -163,7 +163,7 @@
                             </a>
                             <a href="#" class="dropdown-item hover:bg-blue-50 dark:hover:bg-blue-900/20">
                                 <div class="flex items-start">
-                                    <div class="w-2 h-2 mt-2 mr-3 bg-green-500 rounded-full flex-shrink-0"></div>
+                                    <div class="w-2 h-2 mt-2 mr-3 bg-green-500 rounded-full shrink-0"></div>
                                     <div>
                                         <p class="text-sm text-gray-700 dark:text-gray-300">Sarah mentioned you in a comment</p>
                                         <p class="text-xs text-gray-500 dark:text-gray-400">1 hour ago</p>
@@ -172,7 +172,7 @@
                             </a>
                             <a href="#" class="dropdown-item hover:bg-blue-50 dark:hover:bg-blue-900/20">
                                 <div class="flex items-start">
-                                    <div class="w-2 h-2 mt-2 mr-3 bg-purple-500 rounded-full flex-shrink-0"></div>
+                                    <div class="w-2 h-2 mt-2 mr-3 bg-purple-500 rounded-full shrink-0"></div>
                                     <div>
                                         <p class="text-sm text-gray-700 dark:text-gray-300">Team project "Website Redesign" completed</p>
                                         <p class="text-xs text-gray-500 dark:text-gray-400">3 hours ago</p>
