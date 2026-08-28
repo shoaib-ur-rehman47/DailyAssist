@@ -86,7 +86,7 @@
                             Email Address
                         </label>
                         <input type="email" id="email" name="email" value="{{ old('email') }}" required autofocus
-                            class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border @error('email') border-red-500 @else border-gray-300 dark:border-gray-600 @enderror rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors text-sm sm:text-base"
+                            class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border @error('email') border-red-500 @enderror rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors text-sm sm:text-base"
                             placeholder="you@example.com">
                         @error('email')
                             <p class="mt-1 text-xs sm:text-sm text-red-600 dark:text-red-400">{{ $message }}</p>
@@ -105,7 +105,7 @@
                         </div>
                         <div class="relative">
                             <input type="password" id="password" name="password" required
-                                class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border @error('password') border-red-500 @else border-gray-300 dark:border-gray-600 @enderror rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors text-sm sm:text-base"
+                                class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border @error('password') border-red-500 @enderror rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors text-sm sm:text-base"
                                 placeholder="Enter your password">
                             <button type="button" onclick="togglePassword('password')"
                                 class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 p-1">
