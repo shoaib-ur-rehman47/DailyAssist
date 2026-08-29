@@ -12,12 +12,13 @@ class userController extends Controller
     function userRegister(Request $request){
             $validatedData = $request->validate([
             'name' => ['required', 'string', 'max:255', new noSpecialChar],
-            'email' => 'required|email',
+            'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6',
             'password_confirmation' => 'required|same:password',
             'terms' => 'accepted',
         ],[
             'password_confirmation.same' => 'The confirm password should match the password.',
+            // 'email.unique'=> 'this email already exists, please try another one',
         ]);
         
         User::create([
@@ -25,7 +26,7 @@ class userController extends Controller
             'email' => $validatedData['email'],
             'password' => bcrypt($validatedData['password']),
         ]);
-        User::where('email', $validatedData['email'])->update(['is_verified' => 1]);
+        // User::where('email', $validatedData['email'])->update(['is_verified' => 1]);
         return view('temps.userwelcome', ['name' => $validatedData['name']]);
     }
 
