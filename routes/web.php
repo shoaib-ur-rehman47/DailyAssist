@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\WelcomeController;
-use App\Http\Controllers\ShowdataController;
 use App\Http\Controllers\userController;
 
 Route::view('/', 'welcome')->name('welcome');
@@ -21,6 +19,3 @@ Route::view('/getstarted', 'users.getstarted')->name('getstarted');
 Route::post('/getstarted', [userController::class, "userRegister"]);
 Route::view('/login', 'users.login')->name('login');
 Route::post('/login', [userController::class, 'userLogin'])->name('login');
-
-
-// Route::post('/showdata', [ShowdataController::class, "showdata"]);
